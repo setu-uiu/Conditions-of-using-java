@@ -1,0 +1,15 @@
+import java.util.Scanner;.
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the terminal : ");
+        char term = input.next().charAt(0);
+        if ((term >= 'a' && term <= 'z') || (term >= 'A' && term <= 'Z')) {
+            System.out.println("Alphabet");
+        } else if (term >= '0' && term <= '9') {
+            System.out.println("Digit");
+        } else {
+            System.out.println("Special");
+        }
+    }
+}
