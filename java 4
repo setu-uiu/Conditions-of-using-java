@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class java4 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter Angles : ");
+        int ang1 , ang2 , ang3;
+        System.out.println("Enter angle no 1 : ");
+        ang1 = input.nextInt();
+        System.out.println("Enter angle no 2 : ");
+        ang2 = input.nextInt();
+        System.out.println("Enter angle no 3 : ");
+        ang3 = input.nextInt();
+        if ((ang1>0 && ang1<180) && (ang2>0 && ang2<180) && (ang3>0 && ang3<180) && (ang1 + ang2 + ang3 == 180)){
+            System.out.println("Yes");
+        }
+        else {
+            System.out.println("No");
+        }
+    }
+}
