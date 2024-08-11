@@ -1,0 +1,51 @@
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+import java.util.Scanner;
+public class java13 {
+    public static void main(String args[]) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input 1st Number : ");
+        float a = input.nextFloat();
+        System.out.println("Input 2nd Number : ");
+        float b = input.nextFloat();
+        System.out.println(" arithmetic operations : ");
+        int c = input.nextInt();
+        switch (c) {
+            case 1:
+                System.out.println("Addition: " + (a + b));
+                break;
+
+            case 2:
+                System.out.println("subtraction: " + (a - b));
+                break;
+            case 3:
+                System.out.println("Multiplication: " + (a * b));
+                break;
+            case 4:
+                if (b == 0) {
+                    System.out.println("Division by zero is not allowed.");
+                } else {
+                    System.out.println("Enter number : ");
+                    int caseChoice = input.nextInt();
+
+                    switch (caseChoice) {
+                        case 1:
+                            System.out.println("Quotient: " + (int) (a / b));
+                            break;
+                        case 2:
+                            System.out.println("Remainder: " + (a % b));
+                            break;
+                        default:
+                            System.out.println("Invalid case choice.");
+                    }
+                }
+                break;
+
+            default:
+                System.out.println("Invalid choice!");
+                break;
+
+
+        }
+    }
+
+}
