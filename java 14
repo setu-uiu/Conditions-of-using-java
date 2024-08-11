@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class java14 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the Number 1 : ");
+        float a = input.nextFloat();
+        System.out.println("Enter the Number 2 : ");
+        float b = input.nextFloat();
+        System.out.println("Choose operator : ");
+    int c = input.nextInt();
+    switch (c){
+        case 1 :
+        System.out.println("Additon : "+ (a+b));
+        break;
+        case 2 :
+            System.out.println("Subtraction : " + (a - b));
+            break;
+        case 3:
+            System.out.println("Multiplication: " + (a * b));
+            break;
+        case 4:
+            if (b == 0) {
+                System.out.println("Error: Division by zero is not allowed.");
+            } else {
+                System.out.println("Choose the division case:");
+                int caseChoice = input.nextInt();
+
+                switch (caseChoice) {
+                    case 1:
+                        System.out.println("Quotient: " + (int)(a / b));
+                        break;
+                    case 2:
+                        System.out.println("Remainder: " + (a % b));
+                        break;
+                    default:
+                        System.out.println("Invalid case choice.");
+                }
+            }
+            break;
+        default:
+            System.out.println("Invalid operation choice.");
+    }
+    }
+    }
+
